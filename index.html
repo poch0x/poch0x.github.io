@@ -4,330 +4,249 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShushiPodcast</title>
-    <meta name="description" content="Pagina Web de podcast sobre la temas y demas a cerca del Sushi"/>
-    <meta name="keywords" content="sushi, sushi japones, comida, comida japones, html, winterhack, escueladevrock"/>
-    <meta name="author" content="Jorge Infante"/>
-    <meta name="copyright" content="Jorge Infante 2022"/>
-    <!-- Favicon -->
-
-    <!-- ROBOTS -->
-    <meta name="robots" content="index follow">
-
-    <!--Facebook schemas-->
-    <meta property="og:image" content="/images/image-sushi-schema.png">
-    <meta property="og:audio" content="/audio/que-es-el-sushi.mp3" />
-    <meta property="og:type" content="Reto02">
-    <meta property="og:url" content="https://retodevrockwinterhack02.web.app">
-    <meta property="og:title" content="SuschiPodcast">
-    <meta property="og:description" content="Pagina Web de podcast sobre la temas y demas a cerca del Sushi">
-
-    <!--Twitter schemas-->
-    <meta property="--Twitter:image" content="/images/image-sushi-schema.png">
-    <meta property="tw:audio" content="/audio/que-es-el-sushi.mp3" />
-    <meta property="--Twitter:type" content="Reto02">
-    <meta property="--Twitter:url" content="retodevrockwinterhack02">
-    <meta property="--Twitter:title" content="SuschiPodcast">
-    <meta property="--Twitter:description" content="Pagina Web de podcast sobre la temas y demas a cerca del Sushi">
-
-    <!-- Fonts -->
+    <title>Reto 02 Sushi podcast</title>
+    <!-- Fonts-->
     <link rel="stylesheet" href="/fonts/stylesheet.css">
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
-    <!-- Bootstrap Import-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <!-- Css Import -->
+    <!-- CSS-->
     <link rel="stylesheet" href="/css/styles.css">
-    <!-- FontAwesome Import-->
-    <script src="https://kit.fontawesome.com/b34debb2ab.js" crossorigin="anonymous"></script>
+
+        <!-- ROBOTS -->
+    <meta name="robots" content="index follow">
+
+    <!--Facebook schemas-->
+    <meta property="og:image" content="/images/image-sushi-schema.png">
+    <meta property="og:audio" content="/audio/que-es-el-sushi.mp3"/>
+    <meta property="og:type" content="Reto02">
+    <meta property="og:url" content="https://poch0x.github.io">
+    <meta property="og:title" content="SuschiPodcast">
+    <meta property="og:description" content="Pagina Web de podcast sobre la temas y demas a cerca del Sushi">
+
+    <!--Twitter schemas-->
+    <meta property="--Twitter:image" content="/images/image-sushi-schema.png">
+    <meta property="tw:audio" content="/audio/que-es-el-sushi.mp3"/>
+    <meta property="--Twitter:type" content="Reto02">
+    <meta property="--Twitter:url" content="https://poch0x.github.io">
+    <meta property="--Twitter:title" content="SuschiPodcast">
+    <meta property="--Twitter:description" content="Pagina Web de podcast sobre la temas y demas a cerca del Sushi">
 
 </head>
 <body>
-
     <!-- Header -->
     <header>
-            <nav class="navbar navbar-expand-lg bg-dark">
-                <div class="container icono-page">
-                    <a class="navbar-brand title-podcast" href="index.html">
-                        <img src="/images/sushi-logo.png" alt="image logo page"><span class="title-sushi">Sushi</span>Podcast
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#our-episodes">Episodes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                        <hr class="text-white-50">
-
-                        <!-- Enlaces redes sociales-->
-                        <ul class="navbar-nav flex-row flex-wrap text-light">
-                            <li class="nav-item col-6 col-md-auto p-3">
-                                <a class="redes-sociales-icons" href="https://twitter.com/?lang=es"><i class="bi bi-twitter"></i>
-                                <small class="d-md-none ms-2">Twitter</small></a>
-                            </li>
-                            <li class="nav-item col-6 col-md-auto p-3">
-                                <a class="redes-sociales-icons" href="https://github.com"><i class="bi bi-github"></i>
-                                <small class="d-md-none ms-2">GitHub</small></a>
-                            </li>
-                            <li class="nav-item col-6 col-md-auto p-3">
-                                <a class="redes-sociales-icons" href="https://www.whatsapp.com/?lang=es"><i class="bi bi-whatsapp"></i>
-                                <small class="d-md-none ms-2">WhasaApp</small></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>      
-            </nav>
+        <a href="index.html"><img class="logo" src="/images/sushi-logo.png" alt="Logo de la pagina"><span class="title-sushi">Sushi</span><span class="title-podcast"> Podcast</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#our-episodes">Episodes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Section Hero -->
-    <section class="splash">
-        <div class="">
-            <div class="card" style="width: 24rem;">
-                <img src="/images/mahmoud-fawzy-BOJ8RP7-VQA-unsplash.jpg" class="card-img-top" alt="image de fondo splash">
-                <div class="card-body center" itemscope itemtype="https://schema.org/PodcastEpisode">
-                    <h5 class="card-title" itemprop="name">Episode 01: ¿Qué es el Sushi?</h5>
-                    <div class="second-data-podcast">
-                        <span itemprop="datePublished" datetime="2015-02-18">July 14, 2022</span>
-                        <span>,</span>			
-                        <span><a href="#">Author</a></span>    
-                        <span>,</span>          
-                        <span>History Data</span>
-                        <span>,</span>
-                        <span itemprop="timeRequired" datetime="PT05M">05:00:16</span>
-                        <span>,</span>
-                        <span><a href="#">0 Comments</a></span>
-                    </div>
-                    <p class="card-text" itemprop="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, eius! Praesentium soluta id quaerat qui?</p>
-                    <audio controls>
-                        <source src="sound.ogg" type="audio/ogg" >
-                        <source src="/audio/que-es-el-sushi.mp3" type="audio/mp3" >
-                        Tu navegador no soporta el tag audio
-                    </audio>
+    <section>
+        <div class="info-page">
+            <div class="info-text">
+                <h2>PODCAST</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quis?</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">
+                <img class="card-img-fondo" src="/images/episode-01.jpg" alt="#">
+            </div>
+            <div class="card-text">
+                <h5>Episode 01: ¿Qué es el Sushi?</h5>
+                <div class="second-data-podcast">
+                    <span>July 14, 2022</span>
+                    <span>,</span>
+                    <span><a href="#"> Author</a></span>
+                    <span>,</span>              
+                    <span> Kitchen Tips</span>
+                    <span>,</span>
+                    <span> 00:02:16</span>
+                    <span>, </span>
+                    <span><a href="#"> 0 Comments</a></span>
                 </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga hic amet voluptate labore? Velit, deserunt?</p>
+                <audio class="card-reproductor" controls >
+                    <source src="sound.ogg" type="audio/ogg" >
+                    <source src="/audio/que-es-el-sushi.mp3" type="audio/mp3" >
+                    Tu navegador no soporta el tag audio
+                </audio>
             </div>
         </div>
     </section>
 
-    <!-- Section Intro  Our Episodes -->
-    <section class="intro-episodes center" id="our-episodes">
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8 title-our-episodes">
-                <h2>Our Episodes</h2>
-                <p>Sed velit sapien, commodo et dictum porta, varius id nibh. Vivamus sed sapien molestie maximus lorem ut commodo enim.</p>
-            </div>
-            <div class="col-md-2"></div>
+    <!-- Section Our Episodes -->
+    <section class="contedor-our-episodes" id="our-episodes">
+        <div class="tittle-our-episodes">
+            <h5>Our Episodes</h5>
+            <p>Sed velit sapien, commodo et dictum porta, varius id nibh. Vivamus sed sapien molestie maximus lorem ut commodo enim.</p>
         </div>
     </section>
 
-    <!-- Section Episodes -->
-    <section class="episodes">
-        
-        <div class="caja-pods">
-            <img src="/images/episode-01.jpg" alt="">
-            <div class="nom-pods">
-                    <h5>Episode 02: Design Trends in 2022</h5>
-                        <div class="second-data-podcast">
-                            <span>July 14, 2022</span>
-                            <span>,</span>
-                            <span><a href="#">Author</a></span>
-                            <span>,</span>              
-                            <span>Kitchen Tips</span>
-                            <span>,</span>
-                            <span>00:02:16</span>
-                            <span><a href="#">0 Comments</a></span>
-                        </div>
-                <div class="description-pods">
-                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                        <div class="reproductor-pods">
-                            <audio controls style="width: 15rem;">
-                                <source src="sound.ogg" type="audio/ogg" >
-                                <source src="sound.mp3" type="audio/mp3" >
-                                Tu navegador no soporta el tag audio
-                            </audio>
-                        </div>
+    <!-- Section episodes -->
+    <section class="contenedor-episodes">
+        <div class="card">
+            <div class="card-img">
+                <img class="card-img-fondo" src="/images/episode-02.jpg" alt="#">
+            </div>
+            <div class="card-text">
+                <h5>Episode 02: Design Trends in 2022</h5>
+                <div class="second-data-podcast">
+                    <span>July 14, 2022</span>
+                    <span>,</span>
+                    <span><a href="#"> Author</a></span>
+                    <span>,</span>              
+                    <span> Kitchen Tips</span>
+                    <span>,</span>
+                    <span> 00:02:16</span>
+                    <span>, </span>
+                    <span><a href="#"> 0 Comments</a></span>
                 </div>
-            </div>    
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga hic amet voluptate labore? Velit, deserunt?</p>
+                <audio class="card-reproductor" controls >
+                    <source src="sound.ogg" type="audio/ogg" >
+                    <source src="sound.mp3" type="audio/mp3" >
+                    Tu navegador no soporta el tag audio
+                </audio>
+            </div>
         </div>
 
-        <div class="caja-pods">
-            <img src="/images/episode-02.jpg" alt="">
-            <div class="nom-pods">
+        <div class="card">
+            <div class="card-img">
+                <img class="card-img-fondo" src="/images/episode-03.jpg" alt="#">
+            </div>
+            <div class="card-text">
                 <h5>Episode 03: Design Trends in 2022</h5>
                 <div class="second-data-podcast">
                     <span>July 14, 2022</span>
                     <span>,</span>
-                    <span><a href="#">Author</a></span>
+                    <span><a href="#"> Author</a></span>
                     <span>,</span>              
-                    <span>Kitchen Tips</span>
+                    <span> Kitchen Tips</span>
                     <span>,</span>
-                    <span>00:02:16</span>
-                    <span><a href="#">0 Comments</a></span>
+                    <span> 00:02:16</span>
+                    <span>, </span>
+                    <span><a href="#"> 0 Comments</a></span>
                 </div>
-                <div class="description-pods">
-                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                    <div class="reproductor-pods">
-                        <audio controls style="width: 15rem;">
-                            <source src="sound.ogg" type="audio/ogg" >
-                            <source src="sound.mp3" type="audio/mp3" >
-                            Tu navegador no soporta el tag audio
-                        </audio>
-                    </div>
-                </div>
-            </div>    
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga hic amet voluptate labore? Velit, deserunt?</p>
+                <audio class="card-reproductor" controls >
+                    <source src="sound.ogg" type="audio/ogg" >
+                    <source src="sound.mp3" type="audio/mp3" >
+                    Tu navegador no soporta el tag audio
+                </audio>
+            </div>
         </div>
 
-        <div class="caja-pods">
-            <img src="/images/episode-03.jpg" alt="">
-            <div class="nom-pods">
+        <div class="card">
+            <div class="card-img">
+                <img class="card-img-fondo" src="/images/episode-04.jpg" alt="#">
+            </div>
+            <div class="card-text">
                 <h5>Episode 04: Design Trends in 2022</h5>
                 <div class="second-data-podcast">
                     <span>July 14, 2022</span>
                     <span>,</span>
-                    <span><a href="#">Author</a></span>
+                    <span><a href="#"> Author</a></span>
                     <span>,</span>              
-                    <span>Kitchen Tips</span>
+                    <span> Kitchen Tips</span>
                     <span>,</span>
-                    <span>00:02:16</span>
-                    <span><a href="#">0 Comments</a></span>
+                    <span> 00:02:16</span>
+                    <span>, </span>
+                    <span><a href="#"> 0 Comments</a></span>
                 </div>
-                <div class="description-pods">
-                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                    <div class="reproductor-pods">
-                        <audio controls style="width: 15rem;">
-                            <source src="sound.ogg" type="audio/ogg" >
-                            <source src="sound.mp3" type="audio/mp3" >
-                            Tu navegador no soporta el tag audio
-                        </audio>
-                    </div>
-                </div>
-            </div>    
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga hic amet voluptate labore? Velit, deserunt?</p>
+                <audio class="card-reproductor" controls >
+                    <source src="sound.ogg" type="audio/ogg" >
+                    <source src="sound.mp3" type="audio/mp3" >
+                    Tu navegador no soporta el tag audio
+                </audio>
+            </div>
         </div>
 
-        <div class="caja-pods">
-            <img src="/images/episode-04.jpg" alt="">
-            <div class="nom-pods">
+        <div class="card">
+            <div class="card-img">
+                <img class="card-img-fondo" src="/images/episode-05.jpg" alt="#">
+            </div>
+            <div class="card-text">
                 <h5>Episode 05: Design Trends in 2022</h5>
                 <div class="second-data-podcast">
                     <span>July 14, 2022</span>
                     <span>,</span>
-                    <span><a href="#">Author</a></span>
+                    <span><a href="#"> Author</a></span>
                     <span>,</span>              
-                    <span>Kitchen Tips</span>
+                    <span> Kitchen Tips</span>
                     <span>,</span>
-                    <span>00:02:16</span>
-                    <span><a href="#">0 Comments</a></span>
+                    <span> 00:02:16</span>
+                    <span>, </span>
+                    <span><a href="#"> 0 Comments</a></span>
                 </div>
-                <div class="description-pods">
-                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                    <div class="reproductor-pods">
-                        <audio controls style="width: 15rem;">
-                            <source src="sound.ogg" type="audio/ogg" >
-                            <source src="sound.mp3" type="audio/mp3" >
-                            Tu navegador no soporta el tag audio
-                        </audio>
-                    </div>
-                </div>
-            </div>    
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga hic amet voluptate labore? Velit, deserunt?</p>
+                <audio class="card-reproductor" controls >
+                    <source src="sound.ogg" type="audio/ogg" >
+                    <source src="sound.mp3" type="audio/mp3" >
+                    Tu navegador no soporta el tag audio
+                </audio>
+            </div>
         </div>
 
-        <div class="caja-pods">
-            <img src="/images/episode-05.jpg" alt="">
-            <div class="nom-pods">
+        <div class="card">
+            <div class="card-img">
+                <img class="card-img-fondo" src="/images/episode-06.jpg" alt="#">
+            </div>
+            <div class="card-text">
                 <h5>Episode 06: Design Trends in 2022</h5>
                 <div class="second-data-podcast">
                     <span>July 14, 2022</span>
                     <span>,</span>
-                    <span><a href="#">Author</a></span>
+                    <span><a href="#"> Author</a></span>
                     <span>,</span>              
-                    <span>Kitchen Tips</span>
+                    <span> Kitchen Tips</span>
                     <span>,</span>
-                    <span>00:02:16</span>
-                    <span><a href="#">0 Comments</a></span>
+                    <span> 00:02:16</span>
+                    <span>, </span>
+                    <span><a href="#"> 0 Comments</a></span>
                 </div>
-                <div class="description-pods">
-                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                    <div class="reproductor-pods">
-                        <audio controls style="width: 15rem;">
-                            <source src="sound.ogg" type="audio/ogg" >
-                            <source src="sound.mp3" type="audio/mp3" >
-                            Tu navegador no soporta el tag audio
-                        </audio>
-                    </div>
-                </div>
-            </div>    
-        </div>
-
-        <div class="caja-pods">
-            <img src="/images/episode-06.jpg" alt="">
-            <div class="nom-pods">
-                <h5>Episode 07: Design Trends in 2022</h5>
-                <div class="second-data-podcast">
-                    <span>July 14, 2022</span>
-                    <span>,</span>
-                    <span><a href="#">Author</a></span>
-                    <span>,</span>              
-                    <span>Kitchen Tips</span>
-                    <span>,</span>
-                    <span>00:02:16</span>
-                    <span><a href="#">0 Comments</a></span>
-                </div>
-                <div class="description-pods">
-                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                    <div class="reproductor-pods">
-                        <audio controls style="width: 15rem;">
-                            <source src="sound.ogg" type="audio/ogg" >
-                            <source src="sound.mp3" type="audio/mp3" >
-                            Tu navegador no soporta el tag audio
-                        </audio>
-                    </div>
-                </div>
-            </div>    
-        </div>
-    </section>
-
-    <!-- Formulario -->
-    <section id="contact">
-        <div class="formu spaces">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3 class="salute-contact">Send Us a Message</h3>
-                    <p></p>
-                </div>
-                <div class="col-md-6">
-                    <form>    
-                        <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn">Submit</button>  
-                    </form>
-                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga hic amet voluptate labore? Velit, deserunt?</p>
+                <audio class="card-reproductor" controls >
+                    <source src="sound.ogg" type="audio/ogg" >
+                    <source src="sound.mp3" type="audio/mp3" >
+                    Tu navegador no soporta el tag audio
+                </audio>
             </div>
         </div>
     </section>
 
+    <section class="contact" id="contact">
+        
+            <div class="formu-text">
+                <h3>Send Us a Message</h3>
+            </div>
+            <div class="formu-contacto">
+               <form action="">
+                <br>
+                    <label for="exampleInputEmail1" class="form-label">Email address</label><br>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"><br><br>
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label><br>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <br>
+                    <br>
+                    <button type="submit" class="btn">Submit</button>  
+               </form>
+            </div>
+        
+    </section>
+
     <!-- Footer -->
     <footer>
-        <p>Jorge Infante Copyright 2022</p>
+        <p>jorge infante copyright 2022</p>
     </footer>
-        
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </body>
 </html>
