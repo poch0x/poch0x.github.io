@@ -67,8 +67,6 @@ nav ul {
     .logo {
         font-size: 1px;
     }
-
-
 }
 
 nav ul li a {
@@ -81,9 +79,9 @@ nav ul li a {
 }
 
 /*################## CLASES ###########################*/
-.off {
+/*.off {
 
-}
+}*/
 
 .logo {
     display: flex;
@@ -145,11 +143,15 @@ nav ul li a {
 
 .biografia-text {
     *background: greenyellow;
-    max-width: 60%;
-    margin: 0;
-    *padding: 0px;
+    max-width: 70%; /*aqui se toco el width estaba en 60*/
+    margin: 0 auto;
+}
 
-    
+@media only screen and (max-width: 1024px) {
+    .biografia-text {
+        max-width: 90%;
+        margin: 0 auto;
+    }
 }
 
 .biografia-text h2 {
@@ -177,8 +179,8 @@ nav ul li a {
 
 .biografia-photos img {
     margin: 20px;
-    width: 50vh;
-    *height: 50vh;
+    width: 40vh;
+    height: 40vh;
     border-radius: 10px;
     *box-shadow: 2px 2px 4px #999;
 }
