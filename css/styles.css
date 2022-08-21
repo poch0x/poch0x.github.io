@@ -1,103 +1,230 @@
 body {
-    margin: 0;
-    padding: 0;
-    *height: 100vh;
+    margin: 0 auto;
+    height: 100vh;
 }
 
 header {
     background: #212121;
-    *height: 40px;
+    height: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 15px;
 }
-
-a {
-    color: #FFFFFF;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-.title-sushi {
-    color: #673AB7;
-    font-family: 'arista_pro_alternatefat';
-    font-size: 22px;
-}
-
-.title-podcast {
-    font-family: 'arista_pro_alternatefat';
-    color: #FFFFFF;
-    font-size: 22px;
-
-}
-
 
 nav {
-    *background: cornflowerblue;
-    width: 400px;
-    *height: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
-ul {
+nav ul {
     display: flex;
+    align-items: center;
     list-style: none;
-    justify-content: space-around;
+    margin: 0 auto;
+    *background: salmon;
 }
 
 nav ul li a {
-    text-decoration: none;
     color: #FFFFFF;
-    font-family: 'Open Sans', sans-serif;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+/*################## CLASES ###########################*/
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    *background: red;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+
+}
+
+/*-------------- Section Hero ------------------*/
+.contenedor-hero {
+    *background: pink;
+    background: url(/images/1472096754836.jpg);
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.hero-title {
+    *background: red;
+    max-width: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title h2 {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 10px;
+    color: #FFFFFF;
+    font-style: italic;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 
-
-section {
-    *background: lightgoldenrodyellow;
-    background: url(../images/japan_background.jpg) center center fixed;
-    background-size: cover;
+/*---------------- Section Biografia ------------------------------*/
+.contenedor-biografia {
+    background:#212121;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    *height: 60vh;
+    align-items: center;
+    width: 100%;
+    min-height: 50vh;
+
+}
+
+.biografia-text {
+    *background: greenyellow;
+    max-width: 60%;
     margin: 0 auto;
+    padding: 0px;
+    
 }
 
-.logo {
-    height: 1.7rem;
+.biografia-text h2 {
     margin: 10px;
-}
-
-.info-page {
-    /*background: red;*/
-    display: flex;
-    flex-wrap: wrap;   
-    align-items: center; 
-    text-align: center;
-    margin: 0  auto;
-}
-
-.info-text h2 {
-    font-family: 'Rubik', serif;
-    color: #212121;
-
-}
-
-.info-text p {
-    font-family: 'Open Sans', sans-serif;
+    padding-top: 10px;
+    font-size: 2.5em;
     color: #FFFFFF;
+    font-family: 'Merriweather Sans', sans-serif;
+}
 
+.biografia-text p {
+    font-size: 1rem;
+    margin: 10px;
+    text-align:justify ;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-family: 'Merriweather Sans', sans-serif;
+    padding-bottom: 10px;
+}
+
+.biografia-photo-contenedor {
+    *background: rgb(211, 81, 124);
+    *margin: 0 auto;
+}
+
+.biografia-photos img {
+    margin: 20px;
+    width: 50vh;
+    *height: 50vh;
+    border-radius: 10px;
+    *box-shadow: 2px 2px 4px #999;
+}
+
+/*---------------- Section Intro Equipos ---------------------------------*/
+
+
+.intro-equipos h5 {
+    color: #212121;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 15px;
+    padding-top: 25px;
+}
+
+.intro-equipos p {
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+/*---------- Section Equipos -----------------*/
+.contenedor-equipos {
+    background: #FFFFFF;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.circular--square {
+    border-radius: 50%;
+    width: 200px;
+    opacity: 0.8;
+    box-shadow:20px 20px 30px rgb(189, 189, 189);
+}
+
+.foto-equipos {
+    margin: 10px;
+    text-align: center;
+}
+
+.foto-equipos h5 {
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.foto-equipos p {
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 0;
+    font-size: 15px;
+}
+
+
+
+/*---------------- Section intro de Videos -------------------------*/
+
+.contenedor-intro-videos {
+    *background: #FFFFFF;
+    background: gold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.contenedor-intro-videos h5 {
+    color: #212121;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 15px;
+    padding-top: 25px;
+}
+
+.contenedor-intro-videos p {
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 15px;
+    padding: 10px;
+}
+
+
+
+/*----------------- Section Videos ---------------------------------*/
+.contenedor-videos {
+    background: gold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
-    background: #D1C4E9;
+    background: #313033;
     width: 300px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    /*margin: 0 auto;*/
-    margin: 20px;
+    align-items: center;
+    /*margin: 0 auto; */
+    margin: 30px;
     padding: 10px;
     border-radius: 3px;
     box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.3);
@@ -106,99 +233,27 @@ section {
 .card-img {
     /*background: blue;*/
     width: 100%;
-    height: 140px;
 }
 
 .card-img-fondo {
     width: 100%;
     height: 140px;
     border-radius: 5px;
-
 }
 
-.card-text  {
-    *background: red;
+iframe {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
 }
 
-.card-text h5 {
-    text-align: center;
-    font-size: 1rem;
-    margin: 15px;
-    font-family: 'Rubik', serif;
-    color: #212121;
-
-}
-
-.card-text p {
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    color: #212121;
-
-}
-
-.second-data-podcast {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.7rem;
-    font-style: italic;
-    font-family: 'Open Sans', sans-serif;
-
-}
-
-.card-reproductor {
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-}
-
-/*---------------------- section our episodes ------------------------*/
-.contedor-our-episodes {
-    background: white;
-    display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.tittle-our-episodes {
-    text-align:  center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.tittle-our-episodes h5 {
-    font-family: 'Rubik', serif;
-    font-size: 25px;
-    margin: 15px
-}
-
-/*---------------------- Section Episodes -------------------------------*/
-
-.contenedor-episodes {
-    *background: burlywood;
-    background: white;
-}
-
-/*---------------------- Section Contact --------------------------------*/
-
-.contact {
-    /*background: purple;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;*/
-    height: 300px;
+/*----------------- Section Contacto --------------------------------*/
+.contenedor-contacto {
+    background: lightgreen;
     display: flex;
     flex-wrap: wrap;   
     align-items: center; 
     text-align: center;
     margin: 0  auto;
     background: #212121;
-    
 }
 
 .formu-text {
@@ -209,17 +264,16 @@ section {
 }
 
 .formu-text h3 {
-    *background: seagreen;
     display: flex;
-    *text-align: center;
     margin-left: 20px;
     padding-top: 20px;
     align-items: flex-start;
-    font-size: 25px;
+    font-size: 1.5rem;
+    font-family: 'Merriweather Sans', sans-serif;
+
 }
 
 .formu-contacto {
-    *background: greenyellow;
     width: 50%;
     height: 100%;
     justify-content: center;
@@ -229,37 +283,32 @@ section {
 
 .formu-contacto label {
     color: #FFFFFF;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1rem;
 }
 
 button {
-    background: #673AB7;
-    font-size: 25px;
+    background: #6a6081;
+    font-size: 1rem;
     color: #FFFFFF;
     padding: 10px;
     border-radius: 10px;
+    margin: 10px;
 }
 
 
-
-
-
-/*------------------------ footer ---------------------------------------*/
+/*----------------- Footer -------------------------------------------*/
 footer {
-    text-align: center;
-    background: #757575;
-    position: absolute;
+    background: #5a5959;
     width: 100%;
+    position: absolute;
+    text-align: center;
 }
 
 footer p {
-    font-family: 'Open Sans', sans-serif;
     color: #FFFFFF;
+    font-family: 'Merriweather Sans', sans-serif;
 }
-
-
-
 
 
 
