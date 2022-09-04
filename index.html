@@ -4,161 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ronaldo El Fenomeno</title>
-    <!-- Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
-    <!-- CSS Import-->
     <link rel="stylesheet" href="/css/styles.css">
+    <meta name="description" content="TODO ListApp"/>
+    <meta name="keywords" content="reto03, todolist, listapp, winterhack2022"/>
+    <meta name="author" content="Jorge Infante"/>
+    <meta name="copyright" content="Jorge Infante 2022"/>
+    <title>Reto 03 Ultimo</title>
+
+    <!-- ROBOTS -->
+    <meta name="robots" content="index follow">
+
+    <!-- HOLA QUERIDO JONY, PUDE TERMINAR EL RETO03 AL FIN CREO JAJAJA DESPUES DE HACERLO COMO 3 VECES, ESPERO ESTE EN CONDICIONES, TE PIDO PERDON POR EL DISEÑO ME FALTA AFINAR ESA PARTE PRONTO ESTARE COMPRANDO TU CURSO DE UX PARA MEJORAR ESO. TE MANDO UN ABRAZO GRANDE CRACK. ESTOY APRENDIENDO BOCHA EN ESTE WINTERHACK CON VOS Y TU GRAN EQUIPO QUE TE ACOMPAÑA. GRACIAS POR TANTO LOCO. CUALQUIER COSITA SI TENGO QUE MEJORAR O SUMAR ALGO ESTOY DISPUESTO A ESCUCHAR Y RECIBIR LAS MISMAS -->
+
 </head>
 <body>
-    <!-- Header -->
-    <header class="menu-oculto">
-        <div class="logo">RONALDO
-            <!--<img src="/images/ronaldo-icono.jpg" alt="">-->
-        </div>
-        <nav>
-            <ul class="nave">
-                <li><a href="#biografia">Biografia</a></li>
-                <li><a href="#equipos">Equipos</a></li>
-                <li><a href="#videos">Videos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <section id="contenedor-general">
+        <button class="btn-format" id="btnFlot">+</button>
+        <header id="headerLoco">
+            <a href="#"><img src="/images/icono.png" alt=""></a>
+            <h2>ListApp</h2>
+        </header>
+        <section class="secciones" id="pantallaVacia">
+            <h2>No hay items</h2>
+        </section>
 
-    <!-- Section Hero -->
-    <section class="contenedor-hero">
-        <div class="hero-title off">
-            <h2>"Lo intentas y no lo consigues, y lo intentas y no lo consigues, eso no es fracasar, fracasar es cuando no lo intenas otra vez." <br><br>-Ronaldo Luiz Nazario de Lima</h2>
-        </div>
-        
-    </section>
+        <section class="secciones" id="pantallaFormulario">
+                <form action="" class="form-items" id="form-items">
+                    <label for="">Titulo</label>
+                    <input type="text" id="formularioTitulo" required>
+                    <label for="">Tipo</label>
+                    <select name="tipo" id="tipo" required>
+                        <option selected >Seleciona un tipo</option>
+                        <option  name="imagencita" value="/images/viveres.png">Viveres</option>
+                        <option  name="imagencita" value="/images/lacteos.png">Lacteos</option>
+                        <option  name="imagencita" value="/images/verduras.png">Verduras</option>   
+                        <option  name="imagencita" value="/images/electronica.png">Electronica</option>
+                    </select>
+                    <label for="Descripcion">Descripcion</label>
+                    <textarea data-desc="" name="" id="descripcion" cols="30" rows="6" required></textarea>
+                    
+                </form>
+                <button class="btn-formulario" id="button-pantallaVaciaAdd">Add</button>
+                <button class="btn-cerrar" id="btnFormularioCerrar">X</button>
+        </section>
 
-    <!-- Section Biografia -->
-    <section class="contenedor-biografia" id="biografia">
-        <div class="biografia-text">
-            <h2>Biografia</h2>
-            <p>Ronaldo Luiz Nazario de Lima; Rio de Janeiro, 1976) Futbolista brasileño. Dotado de unas cualidades excepcionales, con el balón en sus botas era imprevisible, insospechado, mágico, demoledor y certero. Sus 1,83 m de estatura y sus 75 kg de peso lo convirtieron tempranamente en una gran estrella y en el "crack" del fútbol mundial de su generación, relevando a las grandes figuras de los años ochenta.</p>
-            <p>De familia humilde, la madre de Ronaldo, divorciada, trabajaba catorce horas al día en pizzerías o supermercados para sacar adelante a sus tres hijos. Vivían en el suburbio de Benito Ribeiro, olvidado y lejano como otros tantos arrabales de la zona norte de Río de Janeiro, cuyos habitantes desconocen la paradisíaca zona sur de la ciudad, con sus playas, sus lujosos coches y sus ricas gentes. Ronaldo tampoco conocía esa parte de su propia ciudad, pero no sabía que pronto le llegaría la oportunidad de, incluso, vivir en ella.</p>
-        </div>
-        <div class="biografia-photo-contenedor">
-            <div class="biografia-photos">
-                <img src="/images/ronaldo-09.jpg" alt="">
+        <section class="secciones" id="pantallaListado"> 
+            <div id="contenedor-items">
+                <ul id="contenedor">
+                    
+                </ul>
             </div>
-            
-        </div>
-    </section>
+        </section>
 
-    <!-- Section intro equipos -->
-    <section class="contenedor-intro-equipos" id="equipos">
-        <div class="intro-equipos">
-            <h5>Equipos</h5>
-            <p>Equipos en los que jugo profesionalmente</p>
-        </div>
-    </section>
-
-    <!-- Section Equipos -->
-    <section class="contenedor-equipos">
-        <div class="foto-equipos" >
-            <img class="circular--square" src="/images/ronaldo-cruzeiro.jpg" />
-            <h5>Cruzeiro</h5>
-            <p>(1992-94)</p>
-        </div>
-        <div class="foto-equipos" >
-            <img class="circular--square" src="/images/ronaldo-psv.jpg" />
-            <h5>P. S. V.</h5>
-            <p>(1994-96)</p>
-        </div>
-        <div class="foto-equipos" >
-            <img class="circular--square" src="/images/ronaldo-barcelona.jpg" />
-            <h5>F. C. Barcelona</h5>
-            <p>(1996-97)</p>
-        </div>
-        <div class="foto-equipos" >
-            <img class="circular--square" src="/images/ronaldo-inter.jpg" />
-            <h5>F. C. Internazionale</h5>
-            <p>(1997-02)</p>
-        </div>
-        <div class="foto-equipos" >
-            <img class="circular--square" src="/images/ronaldo-real.jpg" />
-            <h5>Real Madrid C. F.</h5>
-            <p>(2002-07)</p>
-        </div>
-        <div class="foto-equipos" >
-            <img class="circular--square" src="/images/ronaldo-milan.jpg" />
-            <h5>A. C. Milan</h5>
-            <p>(2007-08)</p>
-        </div>
-        <div class="foto-equipos" >
-            <img class="circular--square" src="/images/ronaldo-corinthians.jpg" />
-            <h5>S. C. Corinthians</h5>
-            <p>(2009-11)</p>
-        </div>
-        
-    </section>
-
-    <!-- Section intro de videos -->
-    <section class="contenedor-intro-videos" id="videos">
-        <div class="tittle-videos">
-            <h5>Videos</h5>
-            <p>Disfruta los videos del mejor centro delantero de la historia</p>
-        </div>
-    </section>
-
-    <!-- Section Videos -->
-    <section class="contenedor-videos">
-        <div class="card">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/yy7a0ea1W1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <div class="card">
-            <div class="card-img">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/P7f2k6icJ-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <section class="secciones" id="pantallaDetalles">
+            <!--<h2>pantallaDetalles</h2>-->
+            <div id="detalles">
+                
             </div>
-        </div>
+            <button class="btn-cerrar" id="btnFormularioCerrarDetalle">X</button>
+        </section>
 
-        <div class="card">
-            <div class="card-img">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Wmg2fcQhNPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
     </section>
-
-    <!-- Section Contacto-->
-    <section class="contenedor-contacto" id="contacto">
-        <div class="formu-text">
-            <h3>Send Us a Message</h3>
-        </div>
-        <div class="formu-contacto">
-            <form action="">
-                <br>
-                    <label for="exampleInputEmail1" class="form-label">Email address</label><br>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"><br><br>
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label><br>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    <br>
-                    <br>
-                    <button type="submit" class="btn">Submit</button>  
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>Jorge Infante Copyrigth 2022</p>
-    </footer>
-
-
+    <script src="/js/main.js"></script>
 </body>
 </html>
